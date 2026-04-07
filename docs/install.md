@@ -14,6 +14,8 @@ This is the best option if you want:
 
 Then tell Codex to follow [`.codex/INSTALL.md`](../.codex/INSTALL.md).
 
+If you also want to maintain or publish the repository, see [development.md](./development.md) for remote setup and GitHub workflow commands.
+
 ## Option 2: Copy the Skill Into Your Codex Skills Directory
 
 Create a local skill folder:
@@ -59,3 +61,6 @@ If you installed by copying files, update by replacing `SKILL.md` and any docs y
 
 If you kept the repository as the source of truth, pull the latest changes and refresh your local skill copy when needed.
 
+## Repository Hosting
+
+If you need to connect this repo to GitHub or another Git remote, use the remote setup steps in [development.md](./development.md).

@@ -97,6 +97,7 @@ More examples live in [docs/examples.md](./docs/examples.md).
 ## Documentation
 
 - [Install](./docs/install.md)
+- [Development Setup](./docs/development.md)
 - [Getting Started](./docs/getting-started.md)
 - [Origin and Context](./docs/origin-and-context.md)
 - [Use Cases](./docs/use-cases.md)
@@ -109,6 +110,7 @@ More examples live in [docs/examples.md](./docs/examples.md).
 - [`agents/pragmatic-advisor.md`](./agents/pragmatic-advisor.md): optional prompt-file version
 - [`.codex/INSTALL.md`](./.codex/INSTALL.md): Codex-oriented install instructions
 - [`docs/install.md`](./docs/install.md): manual install and setup notes
+- [`docs/development.md`](./docs/development.md): GitHub/remote connection and maintainer environment setup
 - [`docs/getting-started.md`](./docs/getting-started.md): first successful workflow
 - [`docs/origin-and-context.md`](./docs/origin-and-context.md): why this repo exists and where it fits in the workflow
 - [`docs/use-cases.md`](./docs/use-cases.md): scenario catalog
