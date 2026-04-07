@@ -3,9 +3,10 @@
 Before editing this repository, read these files in order:
 
 1. `docs/repo-context.md`
-2. `README.md`
-3. `SKILL.md`
-4. `docs/install.md`
+2. `docs/origin-and-context.md`
+3. `README.md`
+4. `SKILL.md`
+5. `docs/install.md`
 
 ## Repository Role
 
