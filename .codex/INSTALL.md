@@ -42,7 +42,6 @@ Invoke the skill explicitly:
 Use skill `pragmatic-advisor`.
 
 Review this plan as a pragmatic technical sparring partner.
-Do not write code yet.
 Challenge assumptions, flag hidden costs, and tell me whether a cheaper path exists.
 ```
 
@@ -50,8 +49,12 @@ Challenge assumptions, flag hidden costs, and tell me whether a cheaper path exi
 
 Treat this skill as a pre-implementation filter:
 
+- before bug fixes where root cause is uncertain
+- before small features start growing
+- before adding dependencies
+- before opening a large pull request
+- before deciding what tests are enough
 - before architecture work
 - before introducing new infra or dependencies
 - before turning a feature idea into a build commitment
 - before accepting a "senior-looking" plan at face value
-

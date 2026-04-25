@@ -1,8 +1,81 @@
 # Use Cases
 
-`PragmaticAgent` is most useful when the plan sounds impressive but may not yet be justified.
+`PragmaticAgent` is useful whenever a plan may be buying more complexity than the problem requires.
 
-## 1. Architecture Pressure Test
+It covers both ordinary engineering tasks and larger strategic decisions.
+
+## 1. Everyday Bug Fix Review
+
+Example:
+
+- "Let's patch this by adding a fallback."
+- "The error is gone if we retry three times."
+- "I can fix this by special-casing one customer."
+
+What the skill should do:
+
+- ask what root cause has been verified
+- separate symptom mitigation from real fix
+- identify the smallest regression test that proves the behavior
+- warn when the fix is becoming a broader rewrite
+
+## 2. Small Feature Scope Check
+
+Example:
+
+- "While adding this field, let's clean up the whole form."
+- "This small feature needs a new abstraction."
+- "Let's support every future variant now."
+
+What the skill should do:
+
+- keep the first useful version small
+- distinguish required cleanup from opportunistic cleanup
+- identify what can be deferred safely
+
+## 3. Pull Request Scope Review
+
+Example:
+
+- "This PR fixes a bug, refactors the module, updates tests, and renames helpers."
+- "I am not sure whether to split this up."
+
+What the skill should do:
+
+- separate functional changes from cleanup
+- call out review risk
+- suggest a smaller PR boundary when useful
+
+## 4. Dependency Justification
+
+Example:
+
+- "Let's add a package for this small parser."
+- "Let's install a framework for one workflow."
+- "Let's add Redis for temporary state."
+
+What the skill should do:
+
+- ask what the dependency is buying
+- compare against built-in or local alternatives
+- expose maintenance, security, and upgrade cost
+
+## 5. Test Plan Review
+
+Example:
+
+- "These are the tests I plan to add."
+- "Do we need integration tests for this?"
+- "Can manual testing be enough here?"
+
+What the skill should do:
+
+- tie tests to changed behavior
+- flag missing regression coverage
+- identify low-value test bulk
+- state what remains manually verified
+
+## 6. Architecture Pressure Test
 
 Example:
 
@@ -16,7 +89,7 @@ What the skill should do:
 - check whether modularization inside the current app would solve enough
 - expose deploy, monitoring, and compatibility cost
 
-## 2. Infrastructure and Tooling Choices
+## 7. Infrastructure and Tooling Choices
 
 Example:
 
@@ -30,7 +103,7 @@ What the skill should do:
 - check install-base and compatibility constraints
 - suggest a smaller or more reversible step
 
-## 3. Product Feature Sanity Check
+## 8. Product Feature Sanity Check
 
 Example:
 
@@ -44,7 +117,7 @@ What the skill should do:
 - quantify who benefits and how often
 - separate MVP value from feature creep
 
-## 4. AI and Automation Filtering
+## 9. AI and Automation Filtering
 
 Example:
 
@@ -58,7 +131,7 @@ What the skill should do:
 - distinguish decision support from autonomous action
 - recommend a safer validation path first
 
-## 5. Refactor and Rewrite Decisions
+## 10. Refactor and Rewrite Decisions
 
 Example:
 
@@ -72,7 +145,7 @@ What the skill should do:
 - highlight migration cost, regression risk, and opportunity cost
 - prefer local simplification over strategic rewrites unless evidence is strong
 
-## 6. Roadmap and Planning Review
+## 11. Roadmap and Planning Review
 
 Example:
 
@@ -85,7 +158,7 @@ What the skill should do:
 - identify items that are outputs rather than outcomes
 - expose when "while we're at it" is doubling scope
 
-## 7. Cases Where the Skill Should Agree
+## 12. Cases Where the Skill Should Agree
 
 The skill is also useful when the right answer is:
 
@@ -94,4 +167,3 @@ The skill is also useful when the right answer is:
 - "The cheaper experiment has already been run."
 
 That is a feature, not a failure. The point is discernment, not obstruction.
-

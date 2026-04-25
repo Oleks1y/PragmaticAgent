@@ -2,7 +2,69 @@
 
 These examples are meant to be copied into Codex with minimal editing.
 
-## 1. Critique an Architecture Idea
+## 1. Review a Bug Fix Before Coding
+
+```text
+Use skill `pragmatic-advisor`.
+
+I need to fix this bug. Before coding, help me avoid a symptom patch.
+
+Tell me:
+- what root cause I should verify
+- what minimal fix would be enough
+- what test would prove it
+- what scope I should not expand into
+
+[describe bug here]
+```
+
+## 2. Keep a Small Feature Small
+
+```text
+Use skill `pragmatic-advisor`.
+
+I am adding a small feature.
+Give me a 2-minute pragmatic review focused on scope, risk, simpler implementation, and verification.
+
+[describe feature here]
+```
+
+## 3. Check a Dependency Before Adding It
+
+```text
+Use skill `pragmatic-advisor`.
+
+I am about to add a new dependency for this task.
+Pressure-test whether it is worth it, what simpler option exists, and when the dependency would be justified.
+
+Dependency:
+Task:
+Alternative I considered:
+```
+
+## 4. Review Pull Request Scope
+
+```text
+Use skill `pragmatic-advisor`.
+
+Review this PR plan for scope.
+Tell me what should stay, what should split out, what looks like unrelated cleanup, and what verification is enough.
+
+[paste PR summary here]
+```
+
+## 5. Review a Test Plan
+
+```text
+Use skill `pragmatic-advisor`.
+
+Review this test plan.
+Tell me what behavior must be covered, what is overkill, and what manual verification remains.
+
+[paste test plan here]
+```
+
+## 6. Critique an Architecture Idea
 
 ```text
 Use skill `pragmatic-advisor`.
@@ -20,7 +82,7 @@ Tell me:
 - when this architecture would actually be justified
 ```
 
-## 2. Check Whether a Feature Is Worth Building
+## 7. Check Whether a Product Feature Is Worth Building
 
 ```text
 Use skill `pragmatic-advisor`.
@@ -32,7 +94,7 @@ I want a serious critique, not enthusiasm.
 If the right answer is a smaller non-autonomous MVP, say so.
 ```
 
-## 3. Review a Spec Before Coding
+## 8. Review a Spec Before Coding
 
 ```text
 Use skill `pragmatic-advisor` before proposing implementation.
@@ -47,7 +109,7 @@ Your role:
 [paste spec here]
 ```
 
-## 4. Sanity-Check an Infra Decision
+## 9. Sanity-Check an Infra Decision
 
 ```text
 Use skill `pragmatic-advisor`.
@@ -58,7 +120,7 @@ Review this from the perspective of install base, compatibility, operational com
 Tell me whether this is solving a real product problem or just buying sophistication.
 ```
 
-## 5. Critique a Roadmap
+## 10. Critique a Roadmap
 
 ```text
 Use skill `pragmatic-advisor`.
@@ -73,7 +135,7 @@ I want you to identify:
 [paste roadmap here]
 ```
 
-## 6. Ask for a More Accepting Second Pass
+## 11. Ask for a More Accepting Second Pass
 
 ```text
 Use skill `pragmatic-advisor`.
@@ -87,7 +149,7 @@ Now reassess it using these additional facts:
 Tell me whether the original plan is now justified.
 ```
 
-## 7. Use the Plain Agent File Instead of the Skill
+## 12. Use the Plain Agent File Instead of the Skill
 
 ```text
 Read `./agents/pragmatic-advisor.md` and follow it for this discussion.
@@ -95,4 +157,3 @@ Read `./agents/pragmatic-advisor.md` and follow it for this discussion.
 I am considering a rewrite of our jobs subsystem.
 Pressure-test that decision before we talk about implementation.
 ```
-

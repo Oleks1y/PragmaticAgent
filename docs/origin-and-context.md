@@ -22,6 +22,10 @@ The result is not always a broken system. More often it is a system that technic
 
 It is meant to be used:
 
+- before ordinary tasks grow beyond their actual problem
+- before bug fixes patch symptoms instead of causes
+- before pull requests become hard to review
+- before dependencies are added for small jobs
 - before architecture decisions harden
 - before new infrastructure is introduced
 - before a roadmap item becomes a build commitment
@@ -80,11 +84,11 @@ If this skill ever starts sounding like a generic contrarian persona, it is drif
 
 ## Recommended Place in the Workflow
 
-The best place to use `PragmaticAgent` is between idea generation and implementation.
+The best place to use `PragmaticAgent` is between task intent and implementation.
 
 Typical sequence:
 
-1. Generate the proposal or spec.
+1. Describe the bug fix, feature, PR, dependency, proposal, or spec.
 2. Invoke `pragmatic-advisor` to pressure-test it.
 3. Cut scope, validate assumptions, or confirm the plan.
 4. Only then move into implementation planning or coding.
@@ -101,4 +105,3 @@ The repository was shaped to preserve the spirit of the original pragmatic-agent
 - the plain agent file remains available only as a compatibility bridge.
 
 The repository should keep this structure unless there is a strong reason to change it.
-
